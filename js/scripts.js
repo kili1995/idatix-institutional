@@ -21,7 +21,7 @@ const answers = {
     // Cuántos sistemas
     a: {
       icon: "🤔",
-      text: 'Un solo sistema centralizado es ideal… pero ojo: ¿seguros de que no hay Excels dando vueltas por el equipo? En la mayoría de las empresas el dato "oficial" convive con versiones paralelas. Podemos modelar tus datos para que ese único sistema realmente refleje todo el negocio.',
+      text: 'Un solo sistema centralizado es ideal… pero ojo: ¿seguro de que no hay Excels dando vueltas por el equipo? En la mayoría de las empresas el dato "oficial" convive con versiones paralelas. Podemos modelar tus datos para que ese único sistema realmente refleje todo el negocio.',
       highlight:
         "Ayudamos a consolidar y limpiar para que el dato sea confiable al 100%.",
     },
