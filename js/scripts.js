@@ -174,3 +174,13 @@ function toggleMenu(el) {
     links.style.cssText = "";
   }
 }
+
+document.querySelectorAll(".nav-links a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    const hamburger = document.querySelector(".hamburger");
+    if (hamburger && hamburger.classList.contains("open")) {
+      hamburger.classList.remove("open");
+      document.querySelector(".nav-links").style.cssText = "";
+    }
+  });
+});
