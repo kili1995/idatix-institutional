@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IDATIX — Transformamos datos en decisiones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="logo"><img src="./images/Logo Idatix.png"></a>
+  <ul class="nav-links">
+    <li><a href="#challenge">El problema</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#contacto" class="nav-cta">Hablemos</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu(this)">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+
+  <div class="hero-badge">
+    <span></span> Consultoría de datos · San Francisco, Córdoba
+  </div>
+
+  <h1>Tus datos no hablan.<br><em>Hasta que los hacemos hablar.</em></h1>
+
+  <p class="hero-sub">
+    En IDATIX transformamos datos desordenados en decisiones claras. Acompañamos a tu empresa en todo el ciclo del dato: desde capturarlos hasta convertirlos en ventaja competitiva.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#contacto" class="btn-primary">Hablemos de tus datos →</a>
+    <a href="#challenge" class="btn-ghost">¿Te identificás?</a>
+  </div>
+</section>
+
+<!-- INTERACTIVE CHALLENGE -->
+<section id="challenge">
+  <div class="challenge-inner reveal">
+    <div class="section-label">El problema real</div>
+    <h2>¿Te suena <em style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal;">alguna</em> de estas?</h2>
+    <p style="color:var(--text-muted);margin-top:12px;font-weight:300;">Respondé con honestidad. No te juzgamos.</p>
+
+    <div class="challenge-deck">
+
+      <!-- CARD 1 — Sistemas -->
+      <div class="challenge-card active" id="card-0">
+        <div class="challenge-q">¿Cuántos sistemas o archivos distintos usás para tener <em>una visión completa</em> del negocio?</div>
+        <div class="challenge-options" id="opts-0">
+          <div class="ch-opt" onclick="selectAnswer(0, this, 'a')">1️⃣ Uno solo, centralizado</div>
+          <div class="ch-opt" onclick="selectAnswer(0, this, 'c')">📂 Dos o más</div>
+          <div class="ch-opt" onclick="selectAnswer(0, this, 'd')">🤷 Perdí la cuenta</div>
+        </div>
+        <div class="challenge-reveal" id="rev-0">
+          <button class="btn-primary" onclick="nextCard(1)" style="margin-top:8px">Siguiente pregunta →</button>
+        </div>
+      </div>
+
+      <!-- CARD 2 — Facturación -->
+      <div class="challenge-card" id="card-1">
+        <div class="challenge-q">¿En cuánto tiempo encontrás el <em>monto total de facturación</em> del mes pasado?</div>
+        <div class="challenge-options" id="opts-1">
+          <div class="ch-opt" onclick="selectAnswer(1, this, 'a')">⚡ Menos de 1 minuto</div>
+          <div class="ch-opt" onclick="selectAnswer(1, this, 'b')">☕ 5 a 15 minutos</div>
+          <div class="ch-opt" onclick="selectAnswer(1, this, 'c')">😅 Media hora o más</div>
+          <div class="ch-opt" onclick="selectAnswer(1, this, 'd')">😰 Depende del día...</div>
+        </div>
+        <div class="challenge-reveal" id="rev-1">
+          <button class="btn-primary" onclick="nextCard(2)" style="margin-top:8px">Última pregunta →</button>
+        </div>
+      </div>
+
+      <!-- CARD 3 — Alertas -->
+      <div class="challenge-card" id="card-2">
+        <div class="challenge-q">¿Cuándo te enterás de que <em>un producto se está quedando sin stock</em>?</div>
+        <div class="challenge-options" id="opts-2">
+          <div class="ch-opt" onclick="selectAnswer(2, this, 'a')">🔔 Me llega una alerta automática</div>
+          <div class="ch-opt" onclick="selectAnswer(2, this, 'b')">👀 Lo reviso periódicamente</div>
+          <div class="ch-opt" onclick="selectAnswer(2, this, 'c')">📞 Cuando el cliente me avisa</div>
+          <div class="ch-opt" onclick="selectAnswer(2, this, 'd')">😬 Cuando ya se agotó</div>
+        </div>
+        <div class="challenge-reveal" id="rev-2">
+          <a href="#contacto" class="btn-primary" style="margin-top:8px">Quiero resolverlo →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="challenge-progress">
+      <div class="prog-dot active-dot" id="dot-0" onclick="goToCard(0)" title="Pregunta 1"></div>
+      <div class="prog-dot" id="dot-1" onclick="goToCard(1)" title="Pregunta 2"></div>
+      <div class="prog-dot" id="dot-2" onclick="goToCard(2)" title="Pregunta 3"></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section id="servicios">
+  <div class="section-header reveal">
+    <div class="section-label">Lo que hacemos</div>
+    <h2>Soluciones integrales en torno a tus datos</h2>
+    <p>Desde la primera captura hasta la inteligencia artificial aplicada a tu negocio.</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">🔍</div>
+      <h3>Consultoría de datos</h3>
+      <p>Escuchamos tus necesidades —o las descubrimos juntos— y desarrollamos estrategias personalizadas para que tus datos trabajen para vos.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🧪</div>
+      <h3>Auditoría de información</h3>
+      <p>Evaluación profunda de la calidad, consistencia y estructura de tus datos actuales. Identificamos brechas y oportunidades de mejora.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">📥</div>
+      <h3>Captura y organización</h3>
+      <p>Diseñamos sistemas eficientes para recolectar y estructurar información, incluso cuando los datos todavía no existen.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🔗</div>
+      <h3>Integración de fuentes</h3>
+      <p>Unificamos datos desde múltiples sistemas: ERP, Excel, APIs, bases de datos propias. Una única fuente confiable para toda la empresa.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">📈</div>
+      <h3>Visualización de datos</h3>
+      <p>Dashboards interactivos en Power BI con reportes visuales que permiten tomar decisiones rápidas y basadas en información real.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🤖</div>
+      <h3>Inteligencia artificial</h3>
+      <p>Automatización, análisis predictivo y chatbots internos que responden preguntas del negocio usando los datos reales de tu empresa.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- HOW WE WORK -->
+<section id="como-trabajamos">
+  <div class="section-header reveal">
+    <div class="section-label">El proceso</div>
+    <h2>Cómo transformamos tus datos</h2>
+    <p>Un ciclo completo, paso a paso, adaptado a la realidad de cada empresa.</p>
+  </div>
+
+  <div class="process-steps">
+    <div class="step reveal">
+      <div class="step-num">01</div>
+      <div class="step-body">
+        <h3>Captura</h3>
+        <p>Identificamos qué datos existen, cuáles faltan y cómo capturarlos. Si aún no hay datos estructurados, los creamos.</p>
+      </div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">02</div>
+      <div class="step-body">
+        <h3>Organización</h3>
+        <p>Centralizamos la información en un Data Lakehouse. ERP, Excel, APIs, sistemas propios: todo en un solo lugar, limpio y trazable.</p>
+      </div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">03</div>
+      <div class="step-body">
+        <h3>Modelado</h3>
+        <p>Estructuramos los datos según la lógica de tu negocio. Definimos métricas claras de ventas, rentabilidad, costos, stock y más.</p>
+      </div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">04</div>
+      <div class="step-body">
+        <h3>Visualización</h3>
+        <p>Construimos dashboards interactivos en Power BI. La información deja de estar en Excel aislados y pasa a ser visible para toda la organización.</p>
+      </div>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">05</div>
+      <div class="step-body">
+        <h3>Inteligencia artificial</h3>
+        <p>Con los datos ordenados, aplicamos IA: consultas en lenguaje natural, automatización de análisis y asistentes que interpretan lo que pasa en el negocio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="nosotros">
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <div class="section-label">Quiénes somos</div>
+      <h2>Ingenieros que hablan <em style="font-style:normal;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">el idioma de tu negocio</em></h2>
+      <p>IDATIX es una consultora especializada en soluciones basadas en datos y analítica avanzada, con sede en San Francisco, Córdoba.</p>
+      <p>Acompañamos a las organizaciones en todo el ciclo de valor del dato: desde identificar necesidades hasta convertir la información en conocimiento accionable y ventaja competitiva real.</p>
+      <div class="about-values">
+        <div class="value-box">
+          <strong>Misión</strong>
+          <p>Hacer que los datos trabajen para las personas y las empresas.</p>
+        </div>
+        <div class="value-box">
+          <strong>Visión</strong>
+          <p>Ser referentes en consultoría de datos, revelando el potencial oculto de la información.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-cards reveal">
+      <div class="team-card">
+        <div class="avatar"><img src="./images/profile1.jpg" alt="Foto de perfil de Sofía" /></div>
+        <div class="team-info">
+          <h4>Capello Jorge</h4>
+          <p>Ing. en Sistemas de Información</p>
+          <a href="#" class="li-badge">LinkedIn</a>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="avatar"><img src="./images/profile2.jpeg" alt="Foto de perfil de Sofía" /></div>
+        <div class="team-info">
+          <h4>Vilosio Sofía</h4>
+          <p>Ing. en Sistemas de Información</p>
+          <a href="#" class="li-badge">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CLIENTS -->
+<section id="clientes">
+  <div class="section-header reveal">
+    <div class="section-label">Empresas que confían en nosotros</div>
+    <h2>Resultados reales,<br>empresas reales</h2>
+  </div>
+
+  <div class="clients-logos reveal">
+    <div class="client-logo akron"><img src="./images/Akron.png" alt="Logo de Akron"/></div>
+    <div class="client-logo bbb"><img src="./images/BBB.png" alt="Logo BBB Express" /></div>
+    <div class="client-logo cowix"><img src="./images/CWX.png" alt="Logo Cowix" /></div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contacto">
+  <div class="contact-inner">
+    <div class="reveal">
+      <div class="section-label">Contacto</div>
+      <h2>Contanos tu desafío<br>con los datos</h2>
+      <p style="color:var(--text-muted);margin-top:16px;font-weight:300;">Cada empresa tiene una realidad distinta. Por eso trabajamos de forma personalizada.</p>
+    </div>
+
+    <div class="contact-box reveal">
+      <div class="contact-grid">
+        <div class="contact-field">
+          <label>Tu nombre</label>
+          <input type="text" id="fname" placeholder="Jorge García">
+        </div>
+        <div class="contact-field">
+          <label>Empresa</label>
+          <input type="text" id="fcompany" placeholder="Nombre de tu empresa">
+        </div>
+        <div class="contact-field full">
+          <label>¿Cuál es tu desafío con los datos?</label>
+          <textarea id="fmessage" placeholder="Ej: Tengo datos en tres sistemas distintos y no puedo ver el negocio completo..."></textarea>
+        </div>
+      </div>
+      <button class="btn-whatsapp" onclick="sendWhatsApp()">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Enviar por WhatsApp
+      </button>
+      <div class="contact-alt">
+        <a href="mailto:idatixdataandconsulting@gmail.com">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          idatixdataandconsulting@gmail.com
+        </a>
+        <a href="tel:+5493564649368">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+          +54 9 3564-649368
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#hero" class="logo" style="font-size:1.2rem"><img src="./images/Logo Idatix.png"></a>
+  <p>© 2025 IDATIX · San Francisco, Córdoba, Argentina</p>
+  <p style="font-size:0.75rem;color:var(--text-muted)">idatixdataandconsulting@gmail.com</p>
+</footer>
+
+<script src="./js/scripts.js"></script>
+
+</body>
+</html>
