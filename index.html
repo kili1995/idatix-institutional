@@ -1,316 +1,496 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IDATIX — Transformamos datos en decisiones</title>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-
-<!-- NAV -->
-<nav>
-  <a href="#hero" class="logo"><img src="./images/Logo Idatix.png"></a>
-  <ul class="nav-links">
-    <li><a href="#challenge">El problema</a></li>
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#como-trabajamos">Cómo trabajamos</a></li>
-    <li><a href="#nosotros">Nosotros</a></li>
-    <li><a href="#contacto" class="nav-cta">Hablemos</a></li>
-  </ul>
-  <div class="hamburger" onclick="toggleMenu(this)">
-    <span></span><span></span><span></span>
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0A0A0F">
+    <meta name="color-scheme" content="dark">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <title>IDATIX · Datos e inteligencia artificial para pymes</title>
+    <meta name="description" content="Consultora de datos e IA en San Francisco, Córdoba. Ordenamos tus procesos, centralizamos tus datos y los hacemos hablar con tableros y agentes de inteligencia artificial.">
+    <link rel="canonical" href="https://idatix.com.ar/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:site_name" content="IDATIX">
+    <meta property="og:title" content="Tus datos no hablan. Hasta que los hacemos hablar. · IDATIX">
+    <meta property="og:description" content="Consultora de datos e IA en San Francisco, Córdoba. Ordenamos tus procesos, centralizamos tus datos y los hacemos hablar con tableros y agentes de inteligencia artificial.">
+    <meta property="og:url" content="https://idatix.com.ar/">
+    <meta property="og:image" content="https://idatix.com.ar/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"IDATIX","description":"Consultora de datos e IA en San Francisco, Córdoba. Ordenamos tus procesos, centralizamos tus datos y los hacemos hablar con tableros y agentes de inteligencia artificial.","url":"https://idatix.com.ar","email":"consultoria@idatix.com","telephone":"+54 9 3564-649368","address":{"@type":"PostalAddress","addressLocality":"San Francisco","addressRegion":"Córdoba","addressCountry":"AR"},"sameAs":["https://www.instagram.com/idatix_/","https://www.linkedin.com/company/idatix-dataandconsulting/"]}</script>
+    <script>document.documentElement.classList.add('js')</script>
+    <script type="module" crossorigin src="/assets/index-CP0QOR9l.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/style-CClG3kCN.css">
+  </head>
+  <body>
+    
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header" data-header>
+  <span class="scroll-bar" data-scrollbar aria-hidden="true"></span>
+  <div class="container header-in">
+    <a href="#inicio" class="brand" aria-label="IDATIX, ir al inicio"><img src="/logo.png" alt="IDATIX" class="logo-img" width="114" height="32"></a>
+    <nav class="nav" aria-label="Principal" id="nav">
+      <ul><li><a href="#que-hacemos">Qué hacemos</a></li><li><a href="#como-trabajamos">Cómo trabajamos</a></li><li><a href="#lakehouse">Lakehouse</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul>
+      <a class="btn btn-grad btn-sm nav-cta" href="#contacto">Hablemos</a>
+    </nav>
+    <button class="burger" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú" data-burger><span></span><span></span></button>
   </div>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-glow hero-glow-1"></div>
-  <div class="hero-glow hero-glow-2"></div>
-
-  <div class="hero-badge">
-    <span></span> Consultoría de datos · San Francisco, Córdoba
+</header>
+<main id="contenido">
+<section id="inicio" class="hero">
+  <div class="hero-stage" data-stage>
+    <div class="hs-pin" data-pin>
+      <div class="hs-glow" aria-hidden="true"></div>
+      <div class="hs-copy">
+        <div class="hs-titlewrap">
+          <p class="hs-title display" role="heading" aria-level="1"><span class="l1" data-l1>Tus datos no hablan<span class="pd">.</span></span> <span class="l2 grad-text" data-l2>Hasta que los hacemos hablar<span class="pd">.</span></span></p>
+          <p class="hs-lead" data-lead>Tenés más de un sistema, planillas de cálculo por todos lados y, cuando necesitás un dato, no sabés dónde buscarlo.</p>
+        </div>
+        <div class="hs-cap" data-cap="1"><span class="kicker">Gobierno de datos, contado simple</span><p class="hs-cap-t">Primero ordenamos los procesos y definimos quién es dueño de cada dato<span class="pd">.</span></p></div><div class="hs-cap" data-cap="2"><span class="kicker">Un solo lugar</span><p class="hs-cap-t">Una única fuente de la verdad<span class="pd">.</span></p></div><div class="hs-cap" data-cap="3"><span class="kicker">Tableros</span><p class="hs-cap-t">Y tu empresa se ve, entera, en un tablero<span class="pd">.</span></p></div>
+      </div>
+      <div class="hs-canvas" data-canvas aria-hidden="true">
+        <div class="lake-frame" data-lakeframe><span class="lake-legend"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>Lakehouse<svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span></div>
+        <div class="sys" data-sysbox="erp"><div class="sys-h"><i></i><i></i><i></i><span>ERP</span></div></div><div class="sys" data-sysbox="crm"><div class="sys-h"><i></i><i></i><i></i><span>CRM</span></div></div><div class="sys" data-sysbox="mkt"><div class="sys-h"><i></i><i></i><i></i><span>Marketing · Ads / Meta</span></div></div><div class="sys" data-sysbox="rrhh"><div class="sys-h"><i></i><i></i><i></i><span>Sistema de RRHH</span></div></div>
+        <div class="lane" data-lane style="--i:0">
+        <div class="lane-h"><strong>Ventas</strong><span class="lane-resp">Responsable: Ventas</span><span class="lane-rule">Una sola definición de “venta” para toda la empresa.</span></div>
+      </div><div class="lane" data-lane style="--i:1">
+        <div class="lane-h"><strong>Compras</strong><span class="lane-resp">Responsable: Compras</span><span class="lane-rule">Cada proveedor, una ficha única y al día.</span></div>
+      </div><div class="lane" data-lane style="--i:2">
+        <div class="lane-h"><strong>Stock</strong><span class="lane-resp">Responsable: Depósito</span><span class="lane-rule">El stock se cuenta igual en todos los depósitos.</span></div>
+      </div><div class="lane" data-lane style="--i:3">
+        <div class="lane-h"><strong>Finanzas</strong><span class="lane-resp">Responsable: Finanzas</span><span class="lane-rule">Un solo saldo oficial, conciliado todos los días.</span></div>
+      </div><div class="lane" data-lane style="--i:4">
+        <div class="lane-h"><strong>Administración</strong><span class="lane-resp">Responsable: Administración</span><span class="lane-rule">Cada dato se carga una vez, en un solo lugar.</span></div>
+      </div>
+        <div class="chip chip--erp" data-chip data-area="0" data-sys="erp" data-i="0"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span class="t-raw">OV-00231 · $ 84.300</span><span class="t-ord">Pedidos<em>ERP</em></span></div></div><div class="chip chip--erp" data-chip data-area="1" data-sys="erp" data-i="1"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span class="t-raw">OC-1182 · Prov. B</span><span class="t-ord">Órdenes<em>ERP</em></span></div></div><div class="chip chip--factura" data-chip data-area="1" data-sys="erp" data-i="2"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg><span class="t-raw">Factura A 0003-00012345</span><span class="t-ord">Facturas<em>ERP</em></span></div></div><div class="chip chip--erp" data-chip data-area="2" data-sys="erp" data-i="3"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span class="t-raw">Cód. 10023 · 12 u.</span><span class="t-ord">Stock actual<em>ERP</em></span></div></div><div class="chip chip--ticket" data-chip data-area="2" data-sys="erp" data-i="4"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><span class="t-raw">Lote 22-B · vence 03/27</span><span class="t-ord">Vencimientos<em>ERP</em></span></div></div><div class="chip chip--factura" data-chip data-area="2" data-sys="erp" data-i="5"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg><span class="t-raw">Remito R-4410</span><span class="t-ord">Movimientos<em>ERP</em></span></div></div><div class="chip chip--erp" data-chip data-area="3" data-sys="erp" data-i="6"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span class="t-raw">Saldo banco $ 1,2 M</span><span class="t-ord">Saldos bancarios<em>ERP</em></span></div></div><div class="chip chip--factura" data-chip data-area="3" data-sys="erp" data-i="7"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg><span class="t-raw">Cheque 0458 · 30 días</span><span class="t-ord">Cheques<em>ERP</em></span></div></div><div class="chip chip--erp" data-chip data-area="0" data-sys="crm" data-i="8"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span class="t-raw">Cliente 4471 · Zona Norte</span><span class="t-ord">Clientes<em>CRM</em></span></div></div><div class="chip chip--erp" data-chip data-area="0" data-sys="crm" data-i="9"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span class="t-raw">Oportunidad #318</span><span class="t-ord">Oportunidades<em>CRM</em></span></div></div><div class="chip chip--erp" data-chip data-area="4" data-sys="crm" data-i="10"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span class="t-raw">Contacto: Juan P.</span><span class="t-ord">Contactos<em>CRM</em></span></div></div><div class="chip chip--ticket" data-chip data-area="0" data-sys="mkt" data-i="11"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><span class="t-raw">Campaña Meta · 37 leads</span><span class="t-ord">Campañas<em>Meta</em></span></div></div><div class="chip chip--ticket" data-chip data-area="3" data-sys="mkt" data-i="12"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><span class="t-raw">Google Ads · CPC $ 0,42</span><span class="t-ord">Publicidad<em>Ads</em></span></div></div><div class="chip chip--erp" data-chip data-area="4" data-sys="rrhh" data-i="13"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span class="t-raw">Legajo 112</span><span class="t-ord">Legajos<em>RRHH</em></span></div></div><div class="chip chip--factura" data-chip data-area="4" data-sys="rrhh" data-i="14"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg><span class="t-raw">Recibo de sueldo nov.</span><span class="t-ord">Sueldos<em>RRHH</em></span></div></div><div class="chip chip--ticket" data-chip data-area="4" data-sys="rrhh" data-i="15"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><span class="t-raw">Licencia · 3 días</span><span class="t-ord">Licencias<em>RRHH</em></span></div></div><div class="chip chip--erp" data-chip data-area="4" data-sys="rrhh" data-i="16"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span class="t-raw">Horas extra oct.</span><span class="t-ord">Horas extra<em>RRHH</em></span></div></div><div class="chip chip--excel" data-chip data-area="0" data-sys="" data-i="17"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg><span class="t-raw">Ventas_FINAL_v3.xlsx</span><span class="t-ord">Ventas netas<em>ERP</em></span></div></div><div class="chip chip--excel" data-chip data-area="1" data-sys="" data-i="18"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg><span class="t-raw">Lista_precios_mar.xlsx</span><span class="t-ord">Lista de precios<em>ERP</em></span></div></div><div class="chip chip--excel" data-chip data-area="1" data-sys="" data-i="19"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg><span class="t-raw">Proveedores_2026.xlsx</span><span class="t-ord">Proveedores<em>ERP</em></span></div></div><div class="chip chip--wsp" data-chip data-area="1" data-sys="" data-i="20"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4z"/></svg><span class="t-raw">¿Le pagamos a este proveedor?</span><span class="t-ord">Pagos<em>ERP</em></span></div></div><div class="chip chip--excel" data-chip data-area="2" data-sys="" data-i="21"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg><span class="t-raw">Stock: 340 u.</span><span class="t-ord">Productos<em>ERP</em></span></div></div><div class="chip chip--excel" data-chip data-area="2" data-sys="" data-i="22"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg><span class="t-raw">Inventario_dep2.xlsx</span><span class="t-ord">Inventario físico<em>Planilla</em></span></div></div><div class="chip chip--excel" data-chip data-area="3" data-sys="" data-i="23"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg><span class="t-raw">=SUMA(B2:B90)</span><span class="t-ord">Cuentas a cobrar<em>ERP</em></span></div></div><div class="chip chip--excel" data-chip data-area="3" data-sys="" data-i="24"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg><span class="t-raw">#¡REF!</span><span class="t-ord">Presupuesto<em>Planilla</em></span></div></div>
+        <div class="orb" data-orb><span></span></div>
+        <div class="hs-dash" data-hsdash>
+  <div class="dash" data-dash>
+    <div class="dash-head">
+      <div><strong>Tablero general</strong><span class="dash-sub"><i class="live-dot"></i>Actualizado hoy</span></div>
+      <span class="dash-pill">Datos de ejemplo</span>
+    </div>
+    <div class="dash-kpis">
+      <div class="kpi" data-kpi>
+          <span class="kpi-label">Ventas del mes</span>
+          <span class="kpi-val">$ <b data-count="148.2" data-dec="1">148,2</b> M</span>
+          <span class="kpi-delta">+12 %</span>
+        </div><div class="kpi" data-kpi>
+          <span class="kpi-label">Margen bruto</span>
+          <span class="kpi-val"><b data-count="31.4" data-dec="1">31,4</b> %</span>
+          <span class="kpi-delta">+2,1 pp</span>
+        </div><div class="kpi" data-kpi>
+          <span class="kpi-label">Cobertura de stock</span>
+          <span class="kpi-val"><b data-count="24" data-dec="0">24</b> días</span>
+          <span class="kpi-delta">−3 días</span>
+        </div><div class="kpi" data-kpi>
+          <span class="kpi-label">Clientes activos</span>
+          <span class="kpi-val"><b data-count="1284" data-dec="0">1.284</b></span>
+          <span class="kpi-delta">+86</span>
+        </div>
+    </div>
+    <div class="dash-charts">
+      <figure class="dash-card dash-line">
+        <figcaption>Ventas mensuales ($ M)</figcaption>
+        <svg viewBox="0 0 420 168" preserveAspectRatio="none" role="img" aria-label="Ventas mensuales ($ M): de 96 a 148">
+          <defs>
+            <linearGradient id="hd-area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#865AFE" stop-opacity=".2"/><stop offset="1" stop-color="#865AFE" stop-opacity=".2"/></linearGradient>
+            <linearGradient id="hd-stroke" x1="0" x2="1"><stop offset="0" stop-color="#A68BFF"/><stop offset="1" stop-color="#A68BFF"/></linearGradient>
+          </defs>
+          <line class="grid" x1="0" x2="420" y1="38" y2="38"/><line class="grid" x1="0" x2="420" y1="75" y2="75"/><line class="grid" x1="0" x2="420" y1="113" y2="113"/>
+          <path class="dash-area" d="M10.0,110.0 C16.1,108.6 34.2,107.8 46.4,101.6 C58.5,95.4 70.6,81.4 82.7,73.0 C94.8,64.6 107.0,50.8 119.1,51.1 C131.2,51.4 143.3,67.1 155.5,74.7 C167.6,82.2 179.7,89.5 191.8,96.6 C203.9,103.6 216.1,115.4 228.2,116.8 C240.3,118.2 252.4,110.6 264.5,105.0 C276.7,99.4 288.8,89.3 300.9,83.1 C313.0,76.9 325.2,72.7 337.3,67.9 C349.4,63.2 361.5,62.0 373.6,54.5 C385.8,46.9 403.9,27.8 410.0,22.5 L410.0,150 L10.0,150 Z" fill="url(#hd-area)"/>
+          <path class="dash-path" d="M10.0,110.0 C16.1,108.6 34.2,107.8 46.4,101.6 C58.5,95.4 70.6,81.4 82.7,73.0 C94.8,64.6 107.0,50.8 119.1,51.1 C131.2,51.4 143.3,67.1 155.5,74.7 C167.6,82.2 179.7,89.5 191.8,96.6 C203.9,103.6 216.1,115.4 228.2,116.8 C240.3,118.2 252.4,110.6 264.5,105.0 C276.7,99.4 288.8,89.3 300.9,83.1 C313.0,76.9 325.2,72.7 337.3,67.9 C349.4,63.2 361.5,62.0 373.6,54.5 C385.8,46.9 403.9,27.8 410.0,22.5" fill="none" stroke="url(#hd-stroke)" stroke-width="2.5" stroke-linecap="round" pathLength="1"/>
+          <circle class="dash-dot" cx="410.0" cy="22.5" r="4.5"/>
+          <text class="axis" x="46.4" y="165" text-anchor="middle">Ene</text><text class="axis" x="119.1" y="165" text-anchor="middle">Mar</text><text class="axis" x="191.8" y="165" text-anchor="middle">May</text><text class="axis" x="264.5" y="165" text-anchor="middle">Jul</text><text class="axis" x="337.3" y="165" text-anchor="middle">Sep</text><text class="axis" x="410.0" y="165" text-anchor="middle">Nov</text>
+        </svg>
+      </figure>
+      <figure class="dash-card dash-bars">
+        <figcaption>Ventas por zona</figcaption>
+        <div class="hbars">
+          <div class="hbar"><span class="hbar-l">Norte</span><span class="hbar-track"><span class="hbar-fill" style="--w:100.0%"></span></span><span class="hbar-v">42%</span></div><div class="hbar"><span class="hbar-l">Centro</span><span class="hbar-track"><span class="hbar-fill" style="--w:83.3%"></span></span><span class="hbar-v">35%</span></div><div class="hbar"><span class="hbar-l">Sur</span><span class="hbar-track"><span class="hbar-fill" style="--w:64.3%"></span></span><span class="hbar-v">27%</span></div><div class="hbar"><span class="hbar-l">Online</span><span class="hbar-track"><span class="hbar-fill" style="--w:42.9%"></span></span><span class="hbar-v">18%</span></div>
+        </div>
+      </figure>
+    </div>
+  </div></div>
+        <div class="hs-phone" data-hsphone><div class="phone " >
+    <div class="phone-frame">
+      <div class="phone-notch" aria-hidden="true"></div>
+      <div class="phone-screen"><div class="chat-head">
+    <span class="chat-avatar" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
+    <span class="chat-id"><strong>Tu agente</strong><span><i class="live-dot"></i>en línea</span></span>
+    
   </div>
+          <div class="chat-body hs-chat">
+            <div class="msg msg-user" data-hsq>¿Y ahora mis datos me dicen algo?</div>
+            <div class="msg msg-bot hs-answer" data-hsa><span class="typing" data-hstyping><i></i><i></i><i></i></span><span class="hs-typed" data-hstyped data-text="Hasta que los hacemos hablar."></span></div>
+          </div></div>
+    </div>
+  </div></div>
+      </div>
+      <a class="hs-cue" href="#demo" data-cue>Probalo vos <svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+      <div class="hs-hint" data-hint aria-hidden="true"><span class="mouse"><i></i></span><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M6 13l6 6 6-6"/></svg><span>Bajá y mirá cómo los ordenamos</span></div>
+      <ol class="hs-progress" aria-hidden="true"><li><span>Hoy</span><i></i></li><li><span>Orden</span><i></i></li><li><span>Una fuente</span><i></i></li><li><span>Tablero</span><i></i></li><li><span>Agente</span><i></i></li></ol>
+    </div>
+  </div>
+  <div class="hero-story" data-story>
+    <div class="scene scene-1">
+      <div class="chaos-box" aria-hidden="true">
+        <div class="sys sys-m" style="left:0%;top:0%;width:56%"><div class="sys-h"><i></i><i></i><i></i><span>ERP</span></div><div class="chip chip--erp chip-m" style="--r:-2deg"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span>OV-00231 · $ 84.300</span></div></div><div class="chip chip--erp chip-m" style="--r:2deg"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span>OC-1182 · Prov. B</span></div></div><div class="chip chip--factura chip-m" style="--r:-2deg"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg><span>Factura A 0003-00012345</span></div></div></div><div class="sys sys-m" style="left:60%;top:5%;width:40%"><div class="sys-h"><i></i><i></i><i></i><span>CRM</span></div><div class="chip chip--erp chip-m" style="--r:-2deg"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span>Cliente 4471 · Zona Norte</span></div></div><div class="chip chip--erp chip-m" style="--r:2deg"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span>Oportunidad #318</span></div></div></div><div class="sys sys-m" style="left:51%;top:58%;width:49%"><div class="sys-h"><i></i><i></i><i></i><span>Marketing · Ads / Meta</span></div><div class="chip chip--ticket chip-m" style="--r:-2deg"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><span>Campaña Meta · 37 leads</span></div></div><div class="chip chip--ticket chip-m" style="--r:2deg"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg><span>Google Ads · CPC $ 0,42</span></div></div></div><div class="sys sys-m" style="left:0%;top:50%;width:47%"><div class="sys-h"><i></i><i></i><i></i><span>Sistema de RRHH</span></div><div class="chip chip--erp chip-m" style="--r:-2deg"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg><span>Legajo 112</span></div></div><div class="chip chip--factura chip-m" style="--r:2deg"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 3h8l4 4v14H6z"/><path d="M14 3v4h4M9 12h6M9 16h6"/></svg><span>Recibo de sueldo nov.</span></div></div></div><div class="chip chip--excel chip-static" style="left:30%;top:36%;--r:-6deg;--d:0s"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg><span>Ventas_FINAL_v3.xlsx</span></div></div><div class="chip chip--excel chip-static" style="left:63%;top:37%;--r:5deg;--d:0.7s"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg><span>Lista_precios_mar.xlsx</span></div></div><div class="chip chip--excel chip-static" style="left:14%;top:90%;--r:4deg;--d:1.4s"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M3 15h18M9 4v16"/></svg><span>Proveedores_2026.xlsx</span></div></div><div class="chip chip--wsp chip-static" style="left:58%;top:92%;--r:-5deg;--d:2.0999999999999996s"><div class="chip-in"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4z"/></svg><span>¿Le pagamos a este proveedor?</span></div></div>
+      </div>
+      <div class="scene-copy">
+        <h1 class="display"><span class="l1">Tus datos no hablan<span class="pd">.</span></span> <span class="l2 sr-only">Hasta que los hacemos hablar.</span></h1>
+        <p class="lead">Tenés más de un sistema, planillas de cálculo por todos lados y, cuando necesitás un dato, no sabés dónde buscarlo.</p>
+        <span class="scroll-hint" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
+      </div>
+    </div>
+    <div class="scene scene-2" data-reveal>
+      <span class="kicker">Gobierno de datos, contado simple</span>
+      <h2 class="h2">Primero ordenamos los procesos y definimos quién es dueño de cada dato<span class="pd">.</span></h2>
+      <div class="lake-frame-m">
+        <span class="lake-legend"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg>Lakehouse<svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span>
+        <ul class="lanes-list">
+          <li style="--i:0"><strong>Ventas</strong><span class="lane-resp">Responsable: Ventas</span><span class="lane-rule">Una sola definición de “venta” para toda la empresa.</span><span class="lane-tags"><span>Pedidos<em>ERP</em></span><span>Clientes<em>CRM</em></span><span>Oportunidades<em>CRM</em></span><span>Campañas<em>Meta</em></span><span>Ventas netas<em>ERP</em></span></span></li><li style="--i:1"><strong>Compras</strong><span class="lane-resp">Responsable: Compras</span><span class="lane-rule">Cada proveedor, una ficha única y al día.</span><span class="lane-tags"><span>Órdenes<em>ERP</em></span><span>Facturas<em>ERP</em></span><span>Lista de precios<em>ERP</em></span><span>Proveedores<em>ERP</em></span><span>Pagos<em>ERP</em></span></span></li><li style="--i:2"><strong>Stock</strong><span class="lane-resp">Responsable: Depósito</span><span class="lane-rule">El stock se cuenta igual en todos los depósitos.</span><span class="lane-tags"><span>Stock actual<em>ERP</em></span><span>Vencimientos<em>ERP</em></span><span>Movimientos<em>ERP</em></span><span>Productos<em>ERP</em></span><span>Inventario físico<em>Planilla</em></span></span></li><li style="--i:3"><strong>Finanzas</strong><span class="lane-resp">Responsable: Finanzas</span><span class="lane-rule">Un solo saldo oficial, conciliado todos los días.</span><span class="lane-tags"><span>Saldos bancarios<em>ERP</em></span><span>Cheques<em>ERP</em></span><span>Publicidad<em>Ads</em></span><span>Cuentas a cobrar<em>ERP</em></span><span>Presupuesto<em>Planilla</em></span></span></li><li style="--i:4"><strong>Administración</strong><span class="lane-resp">Responsable: Administración</span><span class="lane-rule">Cada dato se carga una vez, en un solo lugar.</span><span class="lane-tags"><span>Contactos<em>CRM</em></span><span>Legajos<em>RRHH</em></span><span>Sueldos<em>RRHH</em></span><span>Licencias<em>RRHH</em></span><span>Horas extra<em>RRHH</em></span></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="scene scene-3" data-reveal>
+      <svg class="converge" viewBox="0 0 340 200" aria-hidden="true">
+        <defs><radialGradient id="orbg"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#A68BFF"/><stop offset="1" stop-color="#7B49FD" stop-opacity="0"/></radialGradient>
+        <linearGradient id="cvg" gradientUnits="userSpaceOnUse" x1="104" y1="0" x2="272" y2="0"><stop offset="0" stop-color="#865AFE"/><stop offset="1" stop-color="#865AFE"/></linearGradient></defs>
+        <path id="cvp0" class="cv-line" d="M104,20 C190,20 190,100 272,100" pathLength="1"/><text x="96" y="24" text-anchor="end">Ventas</text><circle class="cv-dot" r="3.2"><animateMotion dur="2.4s" begin="0.00s" repeatCount="indefinite"><mpath href="#cvp0"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="0.00s" repeatCount="indefinite"/></circle><circle class="cv-dot" r="3.2"><animateMotion dur="2.4s" begin="1.20s" repeatCount="indefinite"><mpath href="#cvp0"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="1.20s" repeatCount="indefinite"/></circle><path id="cvp1" class="cv-line" d="M104,60 C190,60 190,100 272,100" pathLength="1"/><text x="96" y="64" text-anchor="end">Compras</text><circle class="cv-dot" r="3.2"><animateMotion dur="2.4s" begin="0.30s" repeatCount="indefinite"><mpath href="#cvp1"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="0.30s" repeatCount="indefinite"/></circle><circle class="cv-dot" r="3.2"><animateMotion dur="2.4s" begin="1.50s" repeatCount="indefinite"><mpath href="#cvp1"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="1.50s" repeatCount="indefinite"/></circle><path id="cvp2" class="cv-line" d="M104,100 C190,100 190,100 272,100" pathLength="1"/><text x="96" y="104" text-anchor="end">Stock</text><circle class="cv-dot" r="3.2"><animateMotion dur="2.4s" begin="0.60s" repeatCount="indefinite"><mpath href="#cvp2"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="0.60s" repeatCount="indefinite"/></circle><circle class="cv-dot" r="3.2"><animateMotion dur="2.4s" begin="1.80s" repeatCount="indefinite"><mpath href="#cvp2"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="1.80s" repeatCount="indefinite"/></circle><path id="cvp3" class="cv-line" d="M104,140 C190,140 190,100 272,100" pathLength="1"/><text x="96" y="144" text-anchor="end">Finanzas</text><circle class="cv-dot" r="3.2"><animateMotion dur="2.4s" begin="0.90s" repeatCount="indefinite"><mpath href="#cvp3"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="0.90s" repeatCount="indefinite"/></circle><circle class="cv-dot" r="3.2"><animateMotion dur="2.4s" begin="2.10s" repeatCount="indefinite"><mpath href="#cvp3"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="2.10s" repeatCount="indefinite"/></circle><path id="cvp4" class="cv-line" d="M104,180 C190,180 190,100 272,100" pathLength="1"/><text x="96" y="184" text-anchor="end">Administración</text><circle class="cv-dot" r="3.2"><animateMotion dur="2.4s" begin="1.20s" repeatCount="indefinite"><mpath href="#cvp4"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="1.20s" repeatCount="indefinite"/></circle><circle class="cv-dot" r="3.2"><animateMotion dur="2.4s" begin="2.40s" repeatCount="indefinite"><mpath href="#cvp4"/></animateMotion><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.15;.8;1" dur="2.4s" begin="2.40s" repeatCount="indefinite"/></circle>
+        <circle cx="282" cy="100" r="42" fill="url(#orbg)" class="cv-orb"/>
+      </svg>
+      <span class="kicker">Un solo lugar</span>
+      <h2 class="h2">Una única fuente de la verdad<span class="pd">.</span></h2>
+    </div>
+    <div class="scene scene-4" data-reveal>
+      <span class="kicker">Tableros</span>
+      <h2 class="h2">Y tu empresa se ve, entera, en un tablero<span class="pd">.</span></h2>
+      
+  <div class="dash" data-dash>
+    <div class="dash-head">
+      <div><strong>Tablero general</strong><span class="dash-sub"><i class="live-dot"></i>Actualizado hoy</span></div>
+      <span class="dash-pill">Datos de ejemplo</span>
+    </div>
+    <div class="dash-kpis">
+      <div class="kpi" data-kpi>
+          <span class="kpi-label">Ventas del mes</span>
+          <span class="kpi-val">$ <b data-count="148.2" data-dec="1">148,2</b> M</span>
+          <span class="kpi-delta">+12 %</span>
+        </div><div class="kpi" data-kpi>
+          <span class="kpi-label">Margen bruto</span>
+          <span class="kpi-val"><b data-count="31.4" data-dec="1">31,4</b> %</span>
+          <span class="kpi-delta">+2,1 pp</span>
+        </div><div class="kpi" data-kpi>
+          <span class="kpi-label">Cobertura de stock</span>
+          <span class="kpi-val"><b data-count="24" data-dec="0">24</b> días</span>
+          <span class="kpi-delta">−3 días</span>
+        </div><div class="kpi" data-kpi>
+          <span class="kpi-label">Clientes activos</span>
+          <span class="kpi-val"><b data-count="1284" data-dec="0">1.284</b></span>
+          <span class="kpi-delta">+86</span>
+        </div>
+    </div>
+    <div class="dash-charts">
+      <figure class="dash-card dash-line">
+        <figcaption>Ventas mensuales ($ M)</figcaption>
+        <svg viewBox="0 0 420 168" preserveAspectRatio="none" role="img" aria-label="Ventas mensuales ($ M): de 96 a 148">
+          <defs>
+            <linearGradient id="sd-area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#865AFE" stop-opacity=".2"/><stop offset="1" stop-color="#865AFE" stop-opacity=".2"/></linearGradient>
+            <linearGradient id="sd-stroke" x1="0" x2="1"><stop offset="0" stop-color="#A68BFF"/><stop offset="1" stop-color="#A68BFF"/></linearGradient>
+          </defs>
+          <line class="grid" x1="0" x2="420" y1="38" y2="38"/><line class="grid" x1="0" x2="420" y1="75" y2="75"/><line class="grid" x1="0" x2="420" y1="113" y2="113"/>
+          <path class="dash-area" d="M10.0,110.0 C16.1,108.6 34.2,107.8 46.4,101.6 C58.5,95.4 70.6,81.4 82.7,73.0 C94.8,64.6 107.0,50.8 119.1,51.1 C131.2,51.4 143.3,67.1 155.5,74.7 C167.6,82.2 179.7,89.5 191.8,96.6 C203.9,103.6 216.1,115.4 228.2,116.8 C240.3,118.2 252.4,110.6 264.5,105.0 C276.7,99.4 288.8,89.3 300.9,83.1 C313.0,76.9 325.2,72.7 337.3,67.9 C349.4,63.2 361.5,62.0 373.6,54.5 C385.8,46.9 403.9,27.8 410.0,22.5 L410.0,150 L10.0,150 Z" fill="url(#sd-area)"/>
+          <path class="dash-path" d="M10.0,110.0 C16.1,108.6 34.2,107.8 46.4,101.6 C58.5,95.4 70.6,81.4 82.7,73.0 C94.8,64.6 107.0,50.8 119.1,51.1 C131.2,51.4 143.3,67.1 155.5,74.7 C167.6,82.2 179.7,89.5 191.8,96.6 C203.9,103.6 216.1,115.4 228.2,116.8 C240.3,118.2 252.4,110.6 264.5,105.0 C276.7,99.4 288.8,89.3 300.9,83.1 C313.0,76.9 325.2,72.7 337.3,67.9 C349.4,63.2 361.5,62.0 373.6,54.5 C385.8,46.9 403.9,27.8 410.0,22.5" fill="none" stroke="url(#sd-stroke)" stroke-width="2.5" stroke-linecap="round" pathLength="1"/>
+          <circle class="dash-dot" cx="410.0" cy="22.5" r="4.5"/>
+          <text class="axis" x="46.4" y="165" text-anchor="middle">Ene</text><text class="axis" x="119.1" y="165" text-anchor="middle">Mar</text><text class="axis" x="191.8" y="165" text-anchor="middle">May</text><text class="axis" x="264.5" y="165" text-anchor="middle">Jul</text><text class="axis" x="337.3" y="165" text-anchor="middle">Sep</text><text class="axis" x="410.0" y="165" text-anchor="middle">Nov</text>
+        </svg>
+      </figure>
+      <figure class="dash-card dash-bars">
+        <figcaption>Ventas por zona</figcaption>
+        <div class="hbars">
+          <div class="hbar"><span class="hbar-l">Norte</span><span class="hbar-track"><span class="hbar-fill" style="--w:100.0%"></span></span><span class="hbar-v">42%</span></div><div class="hbar"><span class="hbar-l">Centro</span><span class="hbar-track"><span class="hbar-fill" style="--w:83.3%"></span></span><span class="hbar-v">35%</span></div><div class="hbar"><span class="hbar-l">Sur</span><span class="hbar-track"><span class="hbar-fill" style="--w:64.3%"></span></span><span class="hbar-v">27%</span></div><div class="hbar"><span class="hbar-l">Online</span><span class="hbar-track"><span class="hbar-fill" style="--w:42.9%"></span></span><span class="hbar-v">18%</span></div>
+        </div>
+      </figure>
+    </div>
+  </div>
+    </div>
+    <div class="scene scene-5" data-reveal>
+      <div class="phone phone-sm" >
+    <div class="phone-frame">
+      <div class="phone-notch" aria-hidden="true"></div>
+      <div class="phone-screen"><div class="chat-head">
+    <span class="chat-avatar" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
+    <span class="chat-id"><strong>Tu agente</strong><span><i class="live-dot"></i>en línea</span></span>
+    
+  </div>
+        <div class="chat-body">
+          <div class="msg msg-user">¿Y ahora mis datos me dicen algo?</div>
+          <div class="msg msg-bot"><span class="st-typed" data-sttyped data-text="Hasta que los hacemos hablar.">Hasta que los hacemos hablar.</span></div>
+        </div></div>
+    </div>
+  </div>
+      <p class="display scene5-t grad-text" aria-hidden="true">Hasta que los hacemos hablar<span class="pd">.</span></p>
+      <a class="btn btn-ghost" href="#demo">Probalo vos <svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+    </div>
+  </div></section>
 
-  <h1>Tus datos no hablan.<br><em>Hasta que los hacemos hablar.</em></h1>
+<section id="demo" class="section demo" aria-labelledby="demo-t">
+  <div class="container demo-grid">
+    <div class="demo-copy" data-reveal>
+      <span class="kicker">Demo en vivo</span>
+      <h2 id="demo-t" class="h2">Preguntale a tu empresa</h2>
+      <p class="lead">Así se ve un agente de IA conectado a los datos de un negocio: responde con números reales y, además, te propone qué hacer.</p>
+      <p class="demo-instr"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 12V5.5a1.5 1.5 0 013 0V11"/><path d="M12 10.5a1.5 1.5 0 013 0V12"/><path d="M15 11a1.5 1.5 0 013 0v3.5A6.5 6.5 0 0111.5 21h-.6a6 6 0 01-4.8-2.4L4 15.6a1.6 1.6 0 012.4-2.1L9 16"/><path d="M5 4.5L6.5 6M3.5 9H5.5M14 4l-1.2 1.5"/></svg><span>Tocá una pregunta y mirá cómo responde en el celular</span><span class="demo-instr-arrow"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></p>
+      <div class="qchips" role="group" aria-label="Preguntas de ejemplo">
+        <button type="button" class="qchip" aria-pressed="false" data-q="tendencia" aria-describedby="demo-note"><span class="qchip-n">1</span><span><strong>¿Cómo viene el próximo trimestre?</strong><small>Con lo que vendí en los últimos 3 años, ¿cómo va a venir el próximo trimestre y en qué meses me conviene reforzar?</small></span><span class="qchip-go">Preguntar <svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button><button type="button" class="qchip" aria-pressed="false" data-q="stock" aria-describedby="demo-note"><span class="qchip-n">2</span><span><strong>¿Qué me voy a quedar sin stock?</strong><small>¿Qué productos me voy a quedar sin stock en las próximas 3 semanas y qué tendría que comprar?</small></span><span class="qchip-go">Preguntar <svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+      </div>
+      <p class="demo-note" id="demo-note"><span class="badge-ej"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8v.01"/></svg> Datos de ejemplo</span> Datos de ejemplo de una distribuidora genérica.</p>
+    </div>
+    <div class="demo-phone" data-reveal>
+      <div class="phone phone-lg" role="group" aria-label="Demo del asistente de IA">
+    <div class="phone-frame">
+      <div class="phone-notch" aria-hidden="true"></div>
+      <div class="phone-screen"><div class="chat-head">
+    <span class="chat-avatar" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
+    <span class="chat-id"><strong>Tu agente</strong><span><i class="live-dot"></i>en línea</span></span>
+    <span class="badge-ej badge-ej-sm">Datos de ejemplo</span>
+  </div>
+        <div class="chat-body" data-chat role="log" aria-live="polite" aria-label="Conversación con el asistente" tabindex="0">
+          <div class="msg msg-bot">¡Hola! Soy tu agente de datos. Tocá una de las preguntas de abajo y te respondo con los datos de la empresa.</div>
+        </div>
+        <div class="chat-sugs" data-sugs><span class="sugs-t" data-sugs-t>Tocá una pregunta para probar:</span><button type="button" class="sug" data-q="tendencia"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg><span>¿Cómo viene el próximo trimestre?</span></button><button type="button" class="sug" data-q="stock"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg><span>¿Qué me voy a quedar sin stock?</span></button></div>
+        <div class="chat-input" aria-hidden="true"><span data-input class="chat-input-t">Tocá una pregunta ↑</span><span class="chat-send"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12l16-8-6 16-2-6z"/></svg></span></div></div>
+    </div>
+  </div>
+      <button type="button" class="link-btn" data-reset hidden><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12a8 8 0 108-8 8 8 0 00-6 2.7L4 9"/><path d="M4 4v5h5"/></svg> Reiniciar chat</button>
+    </div>
+  </div>
+  <p class="container demo-pie" data-reveal><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg> Esto corre sobre tus propios datos, con los permisos de cada persona, usando Databricks (Genie).</p>
+</section>
 
-  <p class="hero-sub">
-    En IDATIX transformamos datos desordenados en decisiones claras. Acompañamos a tu empresa en todo el ciclo del dato: desde capturarlos hasta convertirlos en ventaja competitiva.
-  </p>
-
-  <div class="hero-actions">
-    <a href="#contacto" class="btn-primary">Hablemos de tus datos →</a>
-    <a href="#challenge" class="btn-ghost">¿Te identificás?</a>
+<section id="que-hacemos" class="section" aria-labelledby="qh-t">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <span class="kicker">Qué hacemos</span>
+      <h2 id="qh-t" class="h2">Del dato desordenado a la decisión</h2>
+    </div>
+    <div class="ciclo" data-ciclo>
+      <div class="ciclo-track" aria-hidden="true"><span class="ciclo-fill" data-ciclo-fill></span></div>
+      <ol class="ciclo-list">
+        <li class="etapa" data-etapa>
+            <span class="etapa-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3v10M8 9l4 4 4-4"/><path d="M4 15v3a2 2 0 002 2h12a2 2 0 002-2v-3"/></svg></span>
+            <span class="etapa-n">01</span>
+            <h3>Captura</h3>
+            <p class="etapa-t">Traemos los datos de donde estén.</p>
+            <p class="etapa-d">ERP, CRM, planillas de cálculo, sistemas propios, APIs, bases de datos y archivos.</p>
+          </li><li class="etapa" data-etapa>
+            <span class="etapa-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></span>
+            <span class="etapa-n">02</span>
+            <h3>Organización</h3>
+            <p class="etapa-t">Los centralizamos en un solo lugar.</p>
+            <p class="etapa-d">Data Lakehouse con carga automática, historial y trazabilidad.</p>
+          </li><li class="etapa" data-etapa>
+            <span class="etapa-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8 7.5l3 8M16 7.5l-3 8M8.5 6h7"/></svg></span>
+            <span class="etapa-n">03</span>
+            <h3>Modelado</h3>
+            <p class="etapa-t">Los ordenamos según la lógica de tu negocio.</p>
+            <p class="etapa-d">Métricas claras de ventas, rentabilidad, costos, stock, productividad y clientes, para comparar períodos sin errores.</p>
+          </li><li class="etapa" data-etapa>
+            <span class="etapa-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+            <span class="etapa-n">04</span>
+            <h3>Visualización</h3>
+            <p class="etapa-t">Ves tus números claros, en un solo lugar.</p>
+            <p class="etapa-d">Dashboards en Power BI, para dejar de depender de planillas de cálculo aisladas.</p>
+          </li><li class="etapa" data-etapa>
+            <span class="etapa-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg></span>
+            <span class="etapa-n">05</span>
+            <h3>Inteligencia artificial</h3>
+            <p class="etapa-t">Le preguntás a tus datos y te responden.</p>
+            <p class="etapa-d">Consultas en lenguaje natural, agentes que responden con tus datos reales y automatizaciones.</p>
+          </li>
+      </ol>
+    </div>
+    <p class="cierre" data-reveal>Transformamos datos desordenados en información útil para decidir mejor<span class="pd">.</span></p>
   </div>
 </section>
 
-<!-- INTERACTIVE CHALLENGE -->
-<section id="challenge">
-  <div class="challenge-inner reveal">
-    <div class="section-label">El problema real</div>
-    <h2>¿Te suena <em style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal;">alguna</em> de estas?</h2>
-    <p style="color:var(--text-muted);margin-top:12px;font-weight:300;">Respondé con honestidad. No te juzgamos.</p>
-
-    <div class="challenge-deck">
-
-      <!-- CARD 1 — Sistemas -->
-      <div class="challenge-card active" id="card-0">
-        <div class="challenge-q">¿Cuántos sistemas o archivos distintos usás para tener <em>una visión completa</em> del negocio?</div>
-        <div class="challenge-options" id="opts-0">
-          <div class="ch-opt" onclick="selectAnswer(0, this, 'a')">1️⃣ Uno solo, centralizado</div>
-          <div class="ch-opt" onclick="selectAnswer(0, this, 'b')">📂 Dos o más</div>
-          <div class="ch-opt" onclick="selectAnswer(0, this, 'd')">🤷 Perdí la cuenta</div>
-        </div>
-        <div class="challenge-reveal" id="rev-0">
-          <button class="btn-primary" onclick="nextCard(1)" style="margin-top:8px">Siguiente pregunta →</button>
-        </div>
-      </div>
-
-      <!-- CARD 2 — Facturación -->
-      <div class="challenge-card" id="card-1">
-        <div class="challenge-q">¿En cuánto tiempo encontrás el <em>monto total de facturación</em> del mes pasado?</div>
-        <div class="challenge-options" id="opts-1">
-          <div class="ch-opt" onclick="selectAnswer(1, this, 'a')">⚡ Menos de 1 minuto</div>
-          <div class="ch-opt" onclick="selectAnswer(1, this, 'b')">☕ 5 a 15 minutos</div>
-          <div class="ch-opt" onclick="selectAnswer(1, this, 'c')">😅 Media hora o más</div>
-          <div class="ch-opt" onclick="selectAnswer(1, this, 'd')">😰 Depende del día...</div>
-        </div>
-        <div class="challenge-reveal" id="rev-1">
-          <button class="btn-primary" onclick="nextCard(2)" style="margin-top:8px">Última pregunta →</button>
-        </div>
-      </div>
-
-      <!-- CARD 3 — Alertas -->
-      <div class="challenge-card" id="card-2">
-        <div class="challenge-q">¿Cuándo te enterás de que <em>un producto se está quedando sin stock</em>?</div>
-        <div class="challenge-options" id="opts-2">
-          <div class="ch-opt" onclick="selectAnswer(2, this, 'a')">🔔 Me llega una alerta automática</div>
-          <div class="ch-opt" onclick="selectAnswer(2, this, 'b')">👀 Lo reviso periódicamente</div>
-          <div class="ch-opt" onclick="selectAnswer(2, this, 'c')">📞 Cuando el cliente me avisa</div>
-          <div class="ch-opt" onclick="selectAnswer(2, this, 'd')">😬 Cuando ya se agotó</div>
-        </div>
-        <div class="challenge-reveal" id="rev-2">
-          <a href="#contacto" class="btn-primary" style="margin-top:8px">Quiero resolverlo →</a>
-        </div>
-      </div>
-
+<section id="como-trabajamos" class="section section-alt" aria-labelledby="ct-t">
+  <div class="container ct-grid">
+    <div class="ct-copy" data-reveal>
+      <span class="kicker">Cómo trabajamos</span>
+      <h2 id="ct-t" class="h2">No empezamos por la tecnología<span class="pd">.</span> Empezamos por tu empresa<span class="pd">.</span></h2>
+      <p class="lead">Antes de tocar una herramienta, entendemos cómo funciona tu negocio. Ordenamos los procesos, porque cada área y cada proveedor se manejan distinto. Y te acompañamos todo el camino.</p>
+      <p class="para-todos">Trabajamos con cualquier empresa, de cualquier rubro y de cualquier tamaño.</p>
+      <ul class="pills"><li>Cualquier rubro</li><li>Cualquier tamaño</li><li>Cualquier sistema</li></ul>
     </div>
-
-    <div class="challenge-progress">
-      <div class="prog-dot active-dot" id="dot-0" onclick="goToCard(0)" title="Pregunta 1"></div>
-      <div class="prog-dot" id="dot-1" onclick="goToCard(1)" title="Pregunta 2"></div>
-      <div class="prog-dot" id="dot-2" onclick="goToCard(2)" title="Pregunta 3"></div>
+    <div class="ct-steps">
+      <ol class="steps">
+        <li class="step step-free" data-reveal>
+            <span class="step-n" aria-hidden="true">1</span>
+            <div><h3>Diagnóstico gratuito <span class="tag">Sin cargo</span></h3><p>Charlamos, vemos cómo trabajás hoy y dónde están tus datos. Sin costo ni compromiso.</p></div>
+          </li><li class="step" data-reveal>
+            <span class="step-n" aria-hidden="true">2</span>
+            <div><h3>Análisis y arquitectura</h3><p>Ordenamos procesos, definimos responsables y diseñamos la solución a tu medida.</p></div>
+          </li><li class="step" data-reveal>
+            <span class="step-n" aria-hidden="true">3</span>
+            <div><h3>Desarrollo</h3><p>Conectamos tus fuentes y armamos la base, los tableros y los agentes.</p></div>
+          </li><li class="step" data-reveal>
+            <span class="step-n" aria-hidden="true">4</span>
+            <div><h3>Pruebas</h3><p>Validamos los números con tu equipo hasta que coinciden con la realidad.</p></div>
+          </li><li class="step" data-reveal>
+            <span class="step-n" aria-hidden="true">5</span>
+            <div><h3>Soporte y acompañamiento continuo</h3><p>Seguimos a tu lado: ajustes, nuevas preguntas y capacitación.</p></div>
+          </li>
+      </ol>
+      <a class="btn btn-grad" href="#contacto" data-reveal>Pedí tu diagnóstico sin cargo <svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- SERVICES -->
-<section id="servicios">
-  <div class="section-header reveal">
-    <div class="section-label">Lo que hacemos</div>
-    <h2>Soluciones integrales en torno a tus datos</h2>
-    <p>Desde la primera captura hasta la inteligencia artificial aplicada a tu negocio.</p>
-  </div>
-
-  <div class="services-grid">
-    <div class="service-card reveal">
-      <div class="service-icon">🔍</div>
-      <h3>Consultoría de datos</h3>
-      <p>Escuchamos tus necesidades —o las descubrimos juntos— y desarrollamos estrategias personalizadas para que tus datos trabajen para vos.</p>
+<section id="lakehouse" class="section" aria-labelledby="lh-t">
+  <div class="container">
+    <div class="sec-head sec-head-c">
+      <span class="kicker">Lakehouse</span>
+      <h2 id="lh-t" class="h2">Unificar no es juntar en cualquier lado</h2>
+      <p class="lead lh-def">Cuando unificamos tus datos, los llevamos a una arquitectura Big Data. Hay tres grandes opciones; esta es la diferencia, sin tecnicismos.</p>
     </div>
-    <div class="service-card reveal">
-      <div class="service-icon">🧪</div>
-      <h3>Auditoría de información</h3>
-      <p>Evaluación profunda de la calidad, consistencia y estructura de tus datos actuales. Identificamos brechas y oportunidades de mejora.</p>
+    <div class="lh-table-wrap">
+      <table class="lh-table">
+        <caption class="sr-only">Comparación entre Data Warehouse, Data Lake y Lakehouse</caption>
+        <colgroup><col class="c0"><col><col><col></colgroup>
+        <thead><tr><td></td><th scope="col" class="">Data Warehouse</th><th scope="col" class="">Data Lake</th><th scope="col" class="is-hl"><span class="tag">Lo que usamos</span>Lakehouse</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Qué resuelve</th><td class="">Ordena los datos de tus sistemas para hacer reportes confiables.</td><td class="">Guarda todo, de cualquier tipo y en grandes volúmenes, a bajo costo.</td><td class="is-hl">Lo mejor de los dos: guarda todo como un lake y lo ordena como un warehouse, con historial y permisos por persona.</td></tr><tr><th scope="row">Qué le falta</th><td class="">Es rígido: sumar una fuente nueva o datos distintos (archivos, textos, imágenes) es lento y caro.</td><td class="">Sin orden ni reglas se vuelve un depósito: cuesta encontrar el dato y confiar en él.</td><td class="is-hl"><span class="cell-alt">Por qué lo elegimos</span>Crece con vos: arrancás chico y pagás por lo que usás. La misma base alimenta tus tableros de Power BI y tus agentes de IA.</td></tr><tr><th scope="row">Para quién</th><td class="">Empresas con reportes fijos, que cambian poco.</td><td class="">Equipos técnicos que exploran datos en crudo.</td><td class="is-hl">Pymes que quieren decidir con datos hoy y sumar IA mañana, sin armar un área de sistemas.</td></tr>
+        </tbody>
+      </table>
     </div>
-    <div class="service-card reveal">
-      <div class="service-icon">📥</div>
-      <h3>Captura y organización</h3>
-      <p>Diseñamos sistemas eficientes para recolectar y estructurar información, incluso cuando los datos todavía no existen.</p>
-    </div>
-    <div class="service-card reveal">
-      <div class="service-icon">🔗</div>
-      <h3>Integración de fuentes</h3>
-      <p>Unificamos datos desde múltiples sistemas: ERP, Excel, APIs, bases de datos propias. Una única fuente confiable para toda la empresa.</p>
-    </div>
-    <div class="service-card reveal">
-      <div class="service-icon">📈</div>
-      <h3>Visualización de datos</h3>
-      <p>Dashboards interactivos en Power BI con reportes visuales que permiten tomar decisiones rápidas y basadas en información real.</p>
-    </div>
-    <div class="service-card reveal">
-      <div class="service-icon">🤖</div>
-      <h3>Inteligencia artificial</h3>
-      <p>Automatización, análisis predictivo y chatbots internos que responden preguntas del negocio usando los datos reales de tu empresa.</p>
+    <div class="lh-cards">
+      <article class="lh-card ">
+          
+          <h3>Data Warehouse</h3>
+          <dl><dt>Qué resuelve</dt><dd>Ordena los datos de tus sistemas para hacer reportes confiables.</dd><dt>Qué le falta</dt><dd>Es rígido: sumar una fuente nueva o datos distintos (archivos, textos, imágenes) es lento y caro.</dd><dt>Para quién</dt><dd>Empresas con reportes fijos, que cambian poco.</dd></dl>
+        </article><article class="lh-card ">
+          
+          <h3>Data Lake</h3>
+          <dl><dt>Qué resuelve</dt><dd>Guarda todo, de cualquier tipo y en grandes volúmenes, a bajo costo.</dd><dt>Qué le falta</dt><dd>Sin orden ni reglas se vuelve un depósito: cuesta encontrar el dato y confiar en él.</dd><dt>Para quién</dt><dd>Equipos técnicos que exploran datos en crudo.</dd></dl>
+        </article><article class="lh-card is-hl">
+          <span class="tag">Lo que usamos</span>
+          <h3>Lakehouse</h3>
+          <dl><dt>Qué resuelve</dt><dd>Lo mejor de los dos: guarda todo como un lake y lo ordena como un warehouse, con historial y permisos por persona.</dd><dt>Por qué lo elegimos</dt><dd>Crece con vos: arrancás chico y pagás por lo que usás. La misma base alimenta tus tableros de Power BI y tus agentes de IA.</dd><dt>Para quién</dt><dd>Pymes que quieren decidir con datos hoy y sumar IA mañana, sin armar un área de sistemas.</dd></dl>
+        </article>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- HOW WE WORK -->
-<section id="como-trabajamos">
-  <div class="section-header reveal">
-    <div class="section-label">El proceso</div>
-    <h2>Cómo transformamos tus datos</h2>
-    <p>Un ciclo completo, paso a paso, adaptado a la realidad de cada empresa.</p>
+<section id="automatizacion" class="section section-alt" aria-labelledby="am-t">
+  <div class="container">
+    <div class="auto-grid">
+      <div class="auto-copy" data-reveal>
+        <span class="kicker">Automatización</span>
+        <h2 id="am-t" class="h2">Automatizamos lo que hoy hacés a mano</h2>
+        <p class="lead">Descargás un reporte del sistema que no es exactamente lo que necesitás, lo pasás a una planilla de cálculo, borrás columnas, lo cruzás con otra planilla y lo mandás por mail. Todas las semanas. Eso lo puede hacer una automatización: sola, a horario y sin errores.</p>
+        <p class="mini-t">Algunas tareas que automatizamos</p>
+        <ul class="checks"><li><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Reportes que se arman y se envían solos</span></li><li><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Facturas de proveedores que se cargan solas desde el PDF</span></li><li><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Conciliaciones bancarias y de stock</span></li><li><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Avisos automáticos: stock bajo, cobranzas vencidas, pedidos demorados</span></li></ul>
+      </div>
+      <div class="auto-vis" data-reveal aria-hidden="true">
+        <div class="auto-before">
+          <p class="auto-t"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 12a8 8 0 108-8 8 8 0 00-6 2.7L4 9"/><path d="M4 4v5h5"/></svg> Hoy, a mano</p>
+          <ol><li style="--i:0"><span>1</span>Descargás el reporte del sistema</li><li style="--i:1"><span>2</span>Lo pegás en una planilla de cálculo y lo acomodás</li><li style="--i:2"><span>3</span>Lo cruzás con otra planilla</li><li style="--i:3"><span>4</span>Lo mandás por mail</li></ol>
+        </div>
+        <div class="auto-arrow"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M6 13l6 6 6-6"/></svg></div>
+        <div class="auto-after">
+          <p class="auto-t"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg> Automatizado</p>
+          <p>El reporte que necesitás llega solo, actualizado, al mail o al tablero de cada persona.</p>
+        </div>
+      </div>
+    </div>
+    <p class="mini-t auto-otros" data-reveal>Y también, a medida</p>
+    <ul class="cards3">
+      <li class="card" data-reveal><span class="card-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H16a3 3 0 000-6H8a3 3 0 010-6h7.5"/></svg></span><h3>Rutas de entrega más cortas</h3><p>Calculamos el mejor recorrido para tus repartos: menos kilómetros y entregas a tiempo.</p></li><li class="card" data-reveal><span class="card-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 5h16v11H9l-5 4z"/><path d="M9 10.5h.01M12 10.5h.01M15 10.5h.01"/></svg></span><h3>Qué dicen tus clientes</h3><p>Analizamos comentarios y reseñas para saber qué te piden y qué les molesta.</p></li><li class="card" data-reveal><span class="card-ic" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><h3>Software a medida</h3><p>Cuando hace falta, desarrollamos tu propio sistema.</p><span class="card-d">.NET / Blazor</span></li>
+    </ul>
   </div>
+</section>
 
-  <div class="process-steps">
-    <div class="step reveal">
-      <div class="step-num">01</div>
-      <div class="step-body">
-        <h3>Captura</h3>
-        <p>Identificamos qué datos existen, cuáles faltan y cómo capturarlos. Si aún no hay datos estructurados, los creamos.</p>
+<section id="nosotros" class="section" aria-labelledby="no-t">
+  <div class="container">
+    <div class="sec-head sec-head-c" data-reveal>
+      <span class="kicker">Nosotros</span>
+      <h2 id="no-t" class="h2">Detrás de IDATIX</h2>
+      <p class="lead">Somos ingenieros en Sistemas de Información de San Francisco, Córdoba. Trabajamos codo a codo con cada empresa, hablando tu idioma.</p>
+    </div>
+    <div class="team" data-reveal>
+      <div class="tm-photo"><img src="/fotos/equipo.webp" alt="Jorge Capello y Sofía Vilosio, de IDATIX" width="1100" height="1100" loading="lazy" decoding="async"></div>
+      <svg class="tm-arrows" viewBox="0 0 1100 640" aria-hidden="true">
+        <defs><marker id="tm-head" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#E4DBFF"/></marker></defs>
+        <path class="tm-arrow" d="M250 168 C 322 120, 398 132, 436 184" pathLength="1" marker-end="url(#tm-head)"/>
+        <path class="tm-arrow" d="M852 352 C 788 384, 718 336, 680 272" pathLength="1" marker-end="url(#tm-head)"/>
+      </svg>
+      <div class="tm-label tm-l" data-reveal>
+        <svg class="tm-up" viewBox="0 0 40 40" aria-hidden="true"><path d="M28 36 C 14 30, 10 20, 12 6" pathLength="1"/><path d="M6 12 L12 4 L18 11"/></svg>
+        <h3>Jorge Capello</h3>
+        <p>Ing. en Sistemas de Información</p>
+        <a class="tm-in" href="https://www.linkedin.com/in/jorgecapello1995/" target="_blank" rel="noopener" aria-label="LinkedIn de Jorge Capello"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg><span>LinkedIn</span></a>
+      </div>
+      <div class="tm-label tm-r" data-reveal>
+        <svg class="tm-up" viewBox="0 0 40 40" aria-hidden="true"><path d="M12 36 C 26 30, 30 20, 28 6" pathLength="1"/><path d="M22 11 L28 4 L34 12"/></svg>
+        <h3>Sofía Vilosio</h3>
+        <p>Ing. en Sistemas de Información</p>
+        <a class="tm-in" href="https://www.linkedin.com/in/sofia-vilosio-9178b21b0/" target="_blank" rel="noopener" aria-label="LinkedIn de Sofía Vilosio"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg><span>LinkedIn</span></a>
       </div>
     </div>
-    <div class="step reveal">
-      <div class="step-num">02</div>
-      <div class="step-body">
-        <h3>Organización</h3>
-        <p>Centralizamos la información en un Data Lakehouse. ERP, Excel, APIs, sistemas propios: todo en un solo lugar, limpio y trazable.</p>
-      </div>
-    </div>
-    <div class="step reveal">
-      <div class="step-num">03</div>
-      <div class="step-body">
-        <h3>Modelado</h3>
-        <p>Estructuramos los datos según la lógica de tu negocio. Definimos métricas claras de ventas, rentabilidad, costos, stock y más.</p>
-      </div>
-    </div>
-    <div class="step reveal">
-      <div class="step-num">04</div>
-      <div class="step-body">
-        <h3>Visualización</h3>
-        <p>Construimos dashboards interactivos en Power BI. La información deja de estar en Excel aislados y pasa a ser visible para toda la organización.</p>
-      </div>
-    </div>
-    <div class="step reveal">
-      <div class="step-num">05</div>
-      <div class="step-body">
-        <h3>Inteligencia artificial</h3>
-        <p>Con los datos ordenados, aplicamos IA: consultas en lenguaje natural, automatización de análisis y asistentes que interpretan lo que pasa en el negocio.</p>
-      </div>
+    <div class="clients" data-reveal>
+      <p class="mini-t">Empresas que confían en nosotros</p>
+      <ul><li class="client-logo"><img src="/clientes/akron.png" alt="Akron" loading="lazy"></li><li class="client-logo"><img src="/clientes/bbb-express.png" alt="BBB Express" loading="lazy"></li><li class="client-logo"><img src="/clientes/cowix.png" alt="Cowix" loading="lazy"></li></ul>
     </div>
   </div>
 </section>
 
-<div class="divider"></div>
-
-<!-- ABOUT -->
-<section id="nosotros">
-  <div class="about-grid">
-    <div class="about-text reveal">
-      <div class="section-label">Quiénes somos</div>
-      <h2>Ingenieros que hablan <em style="font-style:normal;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">el idioma de tu negocio</em></h2>
-      <p>IDATIX es una consultora especializada en soluciones basadas en datos y analítica avanzada, con sede en San Francisco, Córdoba.</p>
-      <p>Acompañamos a las organizaciones en todo el ciclo de valor del dato: desde identificar necesidades hasta convertir la información en conocimiento accionable y ventaja competitiva real.</p>
-      <div class="about-values">
-        <div class="value-box">
-          <strong>Misión</strong>
-          <p>Hacer que los datos trabajen para las personas y las empresas.</p>
-        </div>
-        <div class="value-box">
-          <strong>Visión</strong>
-          <p>Ser referentes en consultoría de datos, revelando el potencial oculto de la información.</p>
-        </div>
-      </div>
+<section id="contacto" class="section contact" aria-labelledby="co-t">
+  <div class="contact-glow" aria-hidden="true"></div>
+  <div class="container contact-grid">
+    <div data-reveal>
+      <span class="kicker">Contacto</span>
+      <h2 id="co-t" class="h2 h2-xl">¿Hablamos de tus datos?</h2>
+      <p class="lead">Contanos qué te pasa con tu información y te decimos, sin vueltas, cómo te podemos ayudar.</p>
+      <a class="btn btn-grad btn-lg" href="https://wa.me/5493564649368?text=Hola%20IDATIX%2C%20quiero%20conocer%20c%C3%B3mo%20aplicar%20esto%20en%20mi%20empresa" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l1.3-4A8 8 0 1112 20a8 8 0 01-4-1.1z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 01-1.8-1.8l.8-1-1-2z"/></svg> Escribinos por WhatsApp</a>
+      <ul class="contact-list">
+        <li><a href="https://wa.me/5493564649368?text=Hola%20IDATIX%2C%20quiero%20conocer%20c%C3%B3mo%20aplicar%20esto%20en%20mi%20empresa" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l1.3-4A8 8 0 1112 20a8 8 0 01-4-1.1z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 01-1.8-1.8l.8-1-1-2z"/></svg><span>+54 9 3564-649368</span></a></li>
+        <li><a href="mailto:consultoria@idatix.com"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span>consultoria@idatix.com</span></a></li>
+        <li><span class="ci-static"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>San Francisco, Córdoba, Argentina</span></span></li>
+        <li><a href="https://www.instagram.com/idatix_/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg><span>@idatix_</span></a></li>
+        <li><a href="https://www.linkedin.com/company/idatix-dataandconsulting/" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg><span>LinkedIn</span></a></li>
+      </ul>
     </div>
-
-    <div class="team-cards reveal">
-      <div class="team-card">
-        <div class="avatar"><img src="./images/profile1.jpg" alt="Foto de perfil de Sofía" /></div>
-        <div class="team-info">
-          <h4>Capello Jorge</h4>
-          <p>Ing. en Sistemas de Información</p>
-          <a href="https://www.linkedin.com/in/jorgecapello1995" class="li-badge">LinkedIn</a>
-        </div>
-      </div>
-      <div class="team-card">
-        <div class="avatar"><img src="./images/profile2.jpeg" alt="Foto de perfil de Sofía" /></div>
-        <div class="team-info">
-          <h4>Vilosio Sofía</h4>
-          <p>Ing. en Sistemas de Información</p>
-          <a href="https://www.linkedin.com/in/sofia-vilosio-9178b21b0" class="li-badge">LinkedIn</a>
-        </div>
-      </div>
-    </div>
+    <form class="form" data-form novalidate data-reveal>
+      <h3>O dejanos tu consulta</h3>
+      <label><span>Tu nombre</span><input name="nombre" autocomplete="name" required></label>
+      <label><span>Empresa <span class="opt">(opcional)</span></span><input name="empresa" autocomplete="organization"></label>
+      <label><span>¿Qué te gustaría resolver?</span><textarea name="mensaje" rows="4" required></textarea></label>
+      <p class="form-err" data-form-err role="alert" hidden>Completá tu nombre y el mensaje.</p>
+      <button class="btn btn-grad" type="submit"><svg class="ic" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 20l1.3-4A8 8 0 1112 20a8 8 0 01-4-1.1z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8a4 4 0 01-1.8-1.8l.8-1-1-2z"/></svg> Enviar por WhatsApp</button>
+      <p class="form-note">Se abre WhatsApp con tu mensaje listo para enviar.</p>
+    </form>
   </div>
 </section>
+</main>
 
-<div class="divider"></div>
-
-<!-- CLIENTS -->
-<section id="clientes">
-  <div class="section-header reveal">
-    <div class="section-label">Empresas que confían en nosotros</div>
-    <h2>Resultados reales,<br>empresas reales</h2>
-  </div>
-
-  <div class="clients-logos reveal">
-    <div class="client-logo akron"><img src="./images/Akron.png" alt="Logo de Akron"/></div>
-    <div class="client-logo bbb"><img src="./images/BBB.png" alt="Logo BBB Express" /></div>
-    <div class="client-logo cowix"><img src="./images/CWX.png" alt="Logo Cowix" /></div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- CONTACT -->
-<section id="contacto">
-  <div class="contact-inner">
-    <div class="reveal">
-      <div class="section-label">Contacto</div>
-      <h2>Contanos tu desafío<br>con los datos</h2>
-      <p style="color:var(--text-muted);margin-top:16px;font-weight:300;">Cada empresa tiene una realidad distinta. Por eso trabajamos de forma personalizada.</p>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#inicio" class="brand" aria-label="IDATIX, volver al inicio"><img src="/logo.png" alt="IDATIX" class="logo-img" width="114" height="32"></a>
+      <p class="footer-frase">Datos e inteligencia artificial para pymes.</p>
     </div>
-
-    <div class="contact-box reveal">
-      <div class="contact-grid">
-        <div class="contact-field">
-          <label>Tu nombre</label>
-          <input type="text" id="fname" placeholder="Jorge García">
-        </div>
-        <div class="contact-field">
-          <label>Empresa</label>
-          <input type="text" id="fcompany" placeholder="Nombre de tu empresa">
-        </div>
-        <div class="contact-field full">
-          <label>¿Cuál es tu desafío con los datos?</label>
-          <textarea id="fmessage" placeholder="Ej: Tengo datos en tres sistemas distintos y no puedo ver el negocio completo..."></textarea>
-        </div>
-      </div>
-      <button class="btn-whatsapp" onclick="sendWhatsApp()">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-        Enviar por WhatsApp
-      </button>
-      <div class="contact-alt">
-        <a href="mailto:idatixdataandconsulting@gmail.com">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-          idatixdataandconsulting@gmail.com
-        </a>
-        <a href="tel:+5493564649368">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
-          +54 9 3564-649368
-        </a>
-      </div>
-    </div>
+    <nav aria-label="Pie de página"><ul><li><a href="#que-hacemos">Qué hacemos</a></li><li><a href="#como-trabajamos">Cómo trabajamos</a></li><li><a href="#lakehouse">Lakehouse</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#contacto">Contacto</a></li></ul></nav>
+    <ul class="footer-contact">
+      <li><a href="https://wa.me/5493564649368?text=Hola%20IDATIX%2C%20quiero%20conocer%20c%C3%B3mo%20aplicar%20esto%20en%20mi%20empresa" target="_blank" rel="noopener">+54 9 3564-649368</a></li>
+      <li><a href="mailto:consultoria@idatix.com">consultoria@idatix.com</a></li>
+      <li>San Francisco, Córdoba, Argentina</li>
+    </ul>
   </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <a href="#hero" class="logo" style="font-size:1.2rem"><img src="./images/Logo Idatix.png"></a>
-  <p>© 2025 IDATIX · San Francisco, Córdoba, Argentina</p>
-  <p style="font-size:0.75rem;color:var(--text-muted)">idatixdataandconsulting@gmail.com</p>
+  <div class="container footer-bottom"><p>© 2026 IDATIX. Todos los derechos reservados.</p></div>
 </footer>
-
-<script src="./js/scripts.js"></script>
-
-</body>
+  </body>
 </html>
